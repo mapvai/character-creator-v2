@@ -1,13 +1,18 @@
+:root {
+  --editor-padding-top: 128px;
+}
+
 .characterEditor {
-  padding-top: 128px;
+  position: relative;
+  padding-top: var(--editor-padding-top);
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
+.maxWidthWrapper {}
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +29,14 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: var(--editor-padding-top);
+  right: 0;
+  width: 35%;
+  height: calc(100% - var(--editor-padding-top));
+  min-height: 500px;
 }
 
 .controlColumn {
+  width: 50%;
 }
