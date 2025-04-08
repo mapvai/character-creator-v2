@@ -40,3 +40,34 @@
 .controlColumn {
   width: 50%;
 }
+
+@media(max-width: 425px) {
+
+  .header {
+    width: unset;
+  }
+
+  .characterEditor {
+    padding-block: 64px;
+  }
+
+  .characterWrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .controlColumn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 64px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .controlColumn :not(nth-last-child) {
+    margin-right: 16px;
+  }
+}
