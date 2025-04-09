@@ -27,7 +27,6 @@
 
 @media(max-width: 425px) {
   .controlPane {
-    padding: 16px;
     margin-bottom: 0;
     width: 80vw;
   }
